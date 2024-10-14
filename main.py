@@ -32,7 +32,7 @@ if __name__ == "__main__":
             print(datetime.datetime.now(), data)
             left_borrowable_amt = float(data[0].get('left_quota', 0))
             if left_borrowable_amt >= 500:
-                # send email or msg to notify yourself here
+                # TODO send email or msg to notify yourself here
             time.sleep(6)
         except Exception as e:
             print(f"Exception occurred during get loan info: {e}")
